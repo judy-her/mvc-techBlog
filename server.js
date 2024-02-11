@@ -9,6 +9,7 @@ const hbs = exphbs.create({});
 const routes = require('./controllers');
 //utility functions
 const helpers = require('./utils/helpers');
+const crypto = require('crypto');
 
 //db connection
 const sequelize = require('./config/connection');
@@ -18,8 +19,10 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const secretCrypto = crypto.randomBytes(12).toString('hex');
+
 const sess = {
-  secret: 'Super secret secret',
+  secret: secretCrypto,
   cookie: {
     maxAge: 24 * 60 * 60 * 1000, //1 day
     httpOnly: true,
@@ -32,6 +35,7 @@ const sess = {
     db: sequelize,
   }),
 };
+console.log(secretCrypto);
 
 app.use(session(sess));
 
