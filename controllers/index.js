@@ -1,3 +1,9 @@
-const crypto = require('crypto');
-const secretCrypto = crypto.randomBytes(12).toString('hex');
-console.log('The crypto code is:', secretCrypto);
+const router = require('express').Router();
+
+const apiRoutes = require('./api');
+const homeRoutes = require('./homeRoutes.js');
+
+router.use('/', homeRoutes);
+router.use('/api', apiRoutes);
+
+module.exports = router;
