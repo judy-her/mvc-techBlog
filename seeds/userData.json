@@ -1,0 +1,37 @@
+[
+  {
+    "name": "DataDiva",
+    "email": "DataDiva@hotmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "sheCodes",
+    "email": "sheCodes@hotmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "TechVirtuoso",
+    "email": "TechVirtuoso@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "HTML_Master",
+    "email": "HTML_Master@aol.com",
+    "password": "password12345"
+  },
+  {
+    "name": "ByteNinja",
+    "email": "ByteNinja@aol.com",
+    "password": "password12345"
+  },
+  {
+    "name": "TechSavvy",
+    "email": "TechSavvy@aol.com",
+    "password": "password12345"
+  },
+  {
+    "name": "CodeCrusader",
+    "email": "CodeCrusader@aol.com",
+    "password": "password12345"
+  }
+]
