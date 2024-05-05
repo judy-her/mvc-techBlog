@@ -4,12 +4,11 @@ const express = require('express');
 const session = require('express-session');
 //template engine
 const exphbs = require('express-handlebars');
-const hbs = exphbs.create({});
+const hbs = exphbs.create({ helpers });
 //controller routes
 const routes = require('./controllers');
 //utility functions
 const helpers = require('./utils/helpers');
-const crypto = require('crypto');
 
 //db connection
 const sequelize = require('./config/connection');
@@ -17,12 +16,10 @@ const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
-const PORT = process.env.PORT || 3001;
-
-const secretCrypto = crypto.randomBytes(12).toString('hex');
+const PORT = process.env.PORT || 3003;
 
 const sess = {
-  secret: secretCrypto,
+  secret: 'Super secret secret',
   cookie: {
     maxAge: 24 * 60 * 60 * 1000, //1 day
     httpOnly: true,

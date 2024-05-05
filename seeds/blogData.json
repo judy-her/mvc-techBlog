@@ -1,30 +1,30 @@
 [
   {
     "title": "Most Popular Frameworks",
-    "content": "Frameworks like React, Angular, and Vue.js make building dynamic web applications easier.These are popular due to their useful components that can be reused. "
+    "description": "Frameworks like React, Angular, and Vue.js make building dynamic web applications easier.These are popular due to their useful components that can be reused. "
   },
   {
-    "name": "HTTP and REST",
+    "title": "HTTP and REST",
     "description": "Understanding HTTP and RESTful APIs is essential for integrating web applications. Both are important and essential for web developers workin on front or back-end "
   },
   {
-    "name": "New trends, good or bad?",
+    "title": "New trends, good or bad?",
     "description": "Web development trends, such as progressive web apps and serverless architecture, shape the future of web development. In my opinion, it is never a bad thing to learn something new."
   },
   {
-    "name": "Backend Development",
+    "title": "Backend Development",
     "description": "Backend development involves server-side programming and database management.Backend development also encompasses the creation and maintenance of APIs for seamless communication between the server and client-side applications."
   },
   {
-    "name": "Continous Learning",
+    "title": "Continous Learning",
     "description": "Continuous learning is essential in web development due to rapid technological advancements.Whether it's a new dev language or a new algorithm everything helps."
   },
   {
-    "name": "UI/UX",
+    "title": "UI/UX",
     "description": "UI/UX design principles play a significant role in creating intuitive and engaging websites.Effective UI/UX design not only enhances user satisfaction but also contributes to higher conversion rates and overall success of digital products"
   },
   {
-    "name": "Version Control with Git",
+    "title": "Version Control with Git",
     "description": "Version control systems like Git are crucial for collaborating on web development projects.Git's branching and merging capabilities streamline development workflows, enabling teams to work concurrently on different features and easily track changes over time"
   }
 ]
